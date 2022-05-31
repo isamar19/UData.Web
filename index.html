@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>UData</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="fs-3 text-primary"> Medicamentos </h1>
+
+        <div class="row g-4 mt-2">
+            <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="col-sm">
+                <input type="text" class="form-control" placeholder="Composición">
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Forma Farmacéutica">
+            </div>
+            <div class="col-sm">
+                <button type="submit" class="btn btn-primary">Crear</button>
+            </div>
+        </div>
+
+        <table class="table table-hover mt-4">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Composición</th>
+                    <th scope="col">Forma farmacéutica</th>
+                </tr>
+            </thead>
+            <tbody id="medicamentos">
+                <tr>
+                    <td>Paracetamol</td>
+                    <td>500mg</td>
+                    <td>Comprimido</td>
+                </tr>
+                <tr>
+                    <td>Bisolvon</td>
+                    <td>2mg</td>
+                    <td>Jarabe</td>
+                </tr>
+                <tr>
+                    <td>Crema N° 4</td>
+                    <td>110g</td>
+                    <td>Tópico</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        obtenerMedicamentos();
+    </script>
+</body>
+
+</html>
